@@ -1,50 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --base-color: #22215B;
+}
+
+@font-face {
+    font-family: 'mysofia';
+    src: url('Fonts/Sofia-Regular.ttf');
+}
+
+html{
+    font-size: 62.5%;
+    font-family: mysofia;
+    color: var(--base-color);
+}
+
+
+body{
+    background-color: #d3d3d3;
+}
 .container{
     display: flex;
-
+    flex-direction: column;
+    
 }
 
 .left{
     display: flex;
     flex-direction: column;
-    background-color: rgba(65, 55, 55, 0.726);
-    width: 33.3%;
-    border-radius: 10px;
-    margin: 10px;
+    gap: 15px;
+    /* child roles */
+    flex-basis: 30%;
 }
 
-.left1 {
+
+.left1{
     display: flex;
-    
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.left1-1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    /* child roles */
+    flex-basis: 75%;
+}
+
+.left1-1 span:nth-child(even){
+    font-size: 2.4rem;
+    font-weight: bold;
+
+}
+
+.left1-1 span:nth-child(odd){
+    font-size: 1.4rem;
+    opacity: 60%;
+}
+
+
+.left1-2{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    /* child roles */
+    flex-basis: 20%;
+}
+
+.left1-2 svg{
+    width: 24px;
+    fill: #567df4;
+}
+
+.left1-2 span{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.left2{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.left2-1{
+    display: grid;
+    grid-template-areas: "c c1-2 c1-3 c1-4"
+    "c c2-2 c2-3 c2-4";
+    gap: 3px;
+    justify-items: center;
+}
+
+.left3{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left3 img{
+    width: 90%;
 }
 
 .mide{
-
+    flex-basis: 33%;
 }
 
-.mide1{
-    border-radius: 10px;
-    margin: 10px;
+
+@media screen and (min-width:800px){
+
+
+.container{
     display: flex;
-    flex-direction: column;
-    background-color: rgba(65, 55, 55, 0.726);
-    width: 33.3%;
-    text-align: center;
+    flex-direction: row;
 }
 
-.right{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(65, 55, 55, 0.726);
-    width: 33.3%;
-    border-radius: 10px;
-    margin: 10px;
-    
-}
 
-.Icons{
-    margin: 5%;
-}
-
-.content-button{
-    border-color: blue;
 }
