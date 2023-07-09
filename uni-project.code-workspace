@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "uni-project",
+			"path": "."
+		},
+		{
+			"name": "Images",
+			"path": "../../Documents/asseset/Images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "uni-project"
+	}
+}
