@@ -64,7 +64,8 @@ body{
 
 .left1-1 span:nth-child(odd){
     font-size: 1.2rem;
-    opacity: 60%;
+    color: #22215b83;
+
 }
 
 
@@ -186,7 +187,19 @@ body{
     gap: 10px;
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 40px 10px;
+}
+.mide1 .pro{
+    background: #e9e9e9d3;
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1.3em;
+}
+.name-dis{
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .mide-icons{
@@ -204,12 +217,13 @@ body{
 }
 
 .mide-button button{
-    border-radius: 5px;
-    border: 1px solid var(--base-color);
-    padding: 1rem 2.5rem;
+    border-radius: 10px;
+    border: 2px solid var(--base-color);
+    padding: 2rem 6rem;
     margin-top: 1rem;
     color: var(--base-color);
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    cursor: pointer;
 }
 
 .mide-button :nth-child(2){
@@ -269,9 +283,58 @@ body{
     border-radius: 10px;
     justify-content: space-between;
 }
+.expertise-img{
+    display: flex;
+    align-items: center;
+    margin: 0 3em;
+}
 
 .expertise img{
-    width: 100px;
+    
+}
+
+.expertise span{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.expertise ul{
+    font-size: 1.4rem;
+    padding: 20px;
+    list-style: none;
+    vertical-align:center;
+}
+
+.expertise li:nth-of-type(1)::before{
+    content: "•";
+    color: #567df4;
+    font-size: 2em;
+    margin-right:5px;
+    vertical-align:middle;
+}
+
+.expertise li:nth-of-type(2)::before{
+    content: "•";
+    color: #22215B;
+    font-size: 2em;
+    margin-right:5px;
+    vertical-align:middle;
+}
+
+.expertise li:nth-of-type(3)::before{
+    content: "•";
+    color: #ffee00;
+    font-size: 2em;
+    margin-right:5px;
+    vertical-align:middle;
+}
+
+.expertise li:nth-of-type(4)::before{
+    content: "•";
+    color: #11e923;
+    font-size: 2em;
+    margin-right:5px;
+    vertical-align:middle;
 }
 
 .notif-box{
@@ -279,9 +342,19 @@ body{
     grid-template-areas: "e e1-2"
     "e e2-2";
     background-color: #fff;
-    padding: 1rem 1.5rem; 
+    padding: 1rem 3.5rem; 
     border-radius: 10px;
 
+}
+
+.notif-box span:nth-of-type(odd){
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.notif-box span:nth-of-type(even){
+    font-size: 1.4rem;
+    
 }
 
 .tasks{
@@ -290,7 +363,40 @@ body{
     background-color: #fff;
     padding: 1rem 1.5rem; 
     border-radius: 10px;
+    gap: 10px;
+    padding-bottom: 180px;
+
 }
+
+.tasks p{
+    font-size: 1.4rem;
+    opacity: 70%;
+}
+
+
+.tasks1{
+    display: grid;
+    grid-template-areas: "check1 text1 delete1"
+    "check2 text2 delete2"
+    "check3 text3 delete3";
+    column-gap: 5px;
+    row-gap: 5px;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.tasks1 img{
+    justify-self: end;
+}
+
+.tasks1 svg{
+    fill: #d3d3d3;
+}
+.tasks1-1{
+background-color: #d3d3d3;
+}
+
 
 @media screen and (min-width:800px){
 
